@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span>Todos</span>
+</mat-toolbar>
+
+<div class="todo-list">
+  <mat-card *ngFor="let todo of todos" class="todo-card">
+    <mat-card-title>{{ todo.title }}</mat-card-title>
+    <mat-card-content>
+      <p>Todo ID: {{ todo.id }}</p>
+      <p>User ID: {{ todo.userId }}</p>
+      <p>Status: {{ todo.completed ? 'Completed' : 'Pending' }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-paginator [length]="totalTodos"
+                 [pageSize]="pageSize"
+                 [pageIndex]="pageIndex"
+                 (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

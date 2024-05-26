@@ -1,0 +1,31 @@
+.user-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .user-card {
+    margin: 10px 0;
+  }
+  
+  .user-card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    flex: 0 0 auto;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  

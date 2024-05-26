@@ -1,0 +1,11 @@
+.todo-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .todo-card {
+    margin: 10px;
+    padding: 10px;
+  }
+  
